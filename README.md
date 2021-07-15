@@ -255,7 +255,7 @@
             
       If we were to print out the (county_by_candidate_votes) we would get the following output:
             
-            {'County: Jefferson Candidate>> Charles Casper Stockham': 19723, 'County: Jefferson Candidate>> Diana DeGette': 17963, 'County: Jefferson Candidate>> Raymon Anthony              Doane': 1169, 'County: Denver Candidate>> Charles Casper Stockham': 57188, 'County: Denver Candidate>> Diana DeGette': 239282, 'County: Denver Candidate>> Raymon               Anthony Doane': 9585, 'County: Arapahoe Candidate>> Charles Casper Stockham': 8302, 'County: Arapahoe Candidate>> Diana DeGette': 15647, 'County: Arapahoe                        Candidate>> Raymon Anthony Doane': 852}
+            {'County: Jefferson Candidate>> Charles Casper Stockham': 19723, 'County: Jefferson Candidate>> Diana DeGette': 17963,'County: Jefferson Candidate>> Raymon Anthony              Doane': 1169, 'County: Denver Candidate>> Charles Casper Stockham': 57188, 'County: Denver Candidate>> Diana DeGette': 239282, 'County: Denver Candidate>> Raymon               Anthony Doane': 9585, 'County: Arapahoe Candidate>> Charles Casper Stockham': 8302, 'County: Arapahoe Candidate>> Diana DeGette': 15647, 'County: Arapahoe                        Candidate>> Raymon Anthony Doane': 852}
             
       We can access one of the counties and the candidate by simply geting the value:
       
