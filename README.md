@@ -234,8 +234,10 @@
  ## 5.Further use of the script     
  
       As shown in analysis, the layout of the python script is very versitile and can be used to obtain more information for the election.
-      One suggestion is to use the script with some changes to obtain the votes for each candidate and county. A crude coding example for 
-      this can be to create dictionary and list to store information for each candiate in each state. 
+      One suggestion is to use the script with some changes to obtain the votes for each candidate and county, and secondly
+      to calculate the percentage vote for a candidate in that county.
+      A crude coding example for this can be to create dictionary and list to store information for each candiate in each state.
+      
       We can use the .join function to join together the two headings for countyu column and candidate name coloumn
       we declare some new list and disctionary;
       
