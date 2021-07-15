@@ -233,5 +233,52 @@
       
  ## 5.Further use of the script     
  
-      As shown in analysis, the layout of the python script is very versitile and can be used to count any number of information. 
+      As shown in analysis, the layout of the python script is very versitile and can be used to obtain more information for the election.
+      One suggestion is to use the script with some changes to obtain the votes for each candidate and county. A crude coding example for 
+      this can be to create dictionary and list to store information for each candiate in each state. 
+      We can use the .join function to join together the two headings for countyu column and candidate name coloumn
+      we declare some new list and disctionary;
+      
+      county_by_candidate_list=[]
+      county_by_candidate_votes={}
+      
+      for
+      county_by_candidate_name= "".join(("County: ",row[1]," ", "Candidate>> ", row[2],))
+      
+            if county_by_candidate_name not in county_by_candidate_list:
+                  county_by_candidate_list.append(county_by_candidate_name)
+                  county_by_candidate_votes[county_by_candidate_name]=0
+            county_by_candidate_votes[county_by_candidate_name]+=1 
+            print(county_by_candidate_votes)
+            
+      If we were to print out the (county_by_candidate_votes) we would get the following output:
+            
+            {'County: Jefferson Candidate>> Charles Casper Stockham': 19723, 'County: Jefferson Candidate>> Diana DeGette': 17963, 'County: Jefferson Candidate>> Raymon Anthony              Doane': 1169, 'County: Denver Candidate>> Charles Casper Stockham': 57188, 'County: Denver Candidate>> Diana DeGette': 239282, 'County: Denver Candidate>> Raymon               Anthony Doane': 9585, 'County: Arapahoe Candidate>> Charles Casper Stockham': 8302, 'County: Arapahoe Candidate>> Diana DeGette': 15647, 'County: Arapahoe                        Candidate>> Raymon Anthony Doane': 852}
+            
+      We can access one of the counties and the candidate by simply geting the value:
+      
+      individual_vote=county_by_candidate_votes.get("County: Jefferson Candidate>> Charles Casper Stockham")
+      
+      Now that we can get the total votes that Charles Casper Stockham obtained for Jefferson County, we can get the percentage vote
+      in that county. We can do this by first getting the total votes for county Jefferson by simply using:
+      Jefferson_result=county_votes.get("Jefferson")
+     
+      If we print out the two codes above we get:
+                                          38855
+                                          19723
+      To calculate the percentage votes that Charles Casper Stockham got inn county Jefferson:
+      
+            Results= float (individual_vote)/float(Jefferson_result)*100
+            summary_candiate=print(f"Charles Casper Stockham received {individual_vote} votes\n"
+                                     f"Total votes for Jefferson county: {Jefferson_result}\n"
+                                     f"Charles Casper Stockham received {Results:.1f}% of the total votes\n")
+                                     
+       Output will be:
+       Charles Casper Stockham received 19723 votes
+       Total votes for Jefferson county: 38855
+       Charles Casper Stockham received 50.8% of the total votes
+                                     
+      
+      
+      
       
