@@ -245,6 +245,7 @@
       county_by_candidate_votes={}
       
       for
+      ###-----some coding as previously shown
       county_by_candidate_name= "".join(("County: ",row[1]," ", "Candidate>> ", row[2],))
       
             if county_by_candidate_name not in county_by_candidate_list:
