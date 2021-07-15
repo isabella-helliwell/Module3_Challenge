@@ -230,3 +230,8 @@
       Winning Vote Count: 272,892
       winning Percentage: 73.8%
       -----------------------------------
+      
+ ## 5.Further use of the script     
+ 
+      As shown in analysis, the layout of the python script is very versitile and can be used to count any number of information. 
+      
